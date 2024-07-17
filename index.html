@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Inicio de Sesión</title>
+    <link rel="stylesheet" href="css/estilologin.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Inicio de Sesión</h2>
+        <form id="loginForm" onsubmit="return validateForm()">
+            <label for="username">Nombre de Usuario:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+            <div class="buttons">
+                <button type="submit">Iniciar Sesión</button>
+                <button type="button" onclick="resetForm()">Limpiar</button>
+            </div>
+        </form>
+        <p id="error-message" class="error-message"></p>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

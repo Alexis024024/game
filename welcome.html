@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juegos</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="game-item" onclick="loadGame('juegos/simon.html')">
+            <img src="images/mibi.jpg" alt="Trivia Icon" class="game-icon">
+            <span class="game-name">SImon Dise</span>
+        </div>
+        <div class="game-item" onclick="loadGame('juegos/memory.html')">
+            <img src="images/mibi.jpg" alt="Memory Icon" class="game-icon">
+            <span class="game-name">Memory</span>
+        </div>
+        <div class="game-item" onclick="loadGame('juegos/space invaders.html')">
+            <img src="images/mibi.jpg" alt="Memory Icon" class="game-icon">
+            <span class="game-name">Space Invaders</span>
+        </div>
+        <footer class="footer">
+            <p>&copy; Diseño y Programación WEB</p>
+            <p>&copy; Desarrollo Web Entorno Cliente</p>
+
+            <p>&copy; Ballenas Quispe. Alexander</p>
+            <p>&copy; Cabana Sumari. Brayan</p>
+
+        </footer>
+    </div>
+    <div class="content">
+        <iframe id="game-frame" src=""></iframe>
+    </div>
+    <script src="script/script.js"></script>
+    <script src="script/sound.js"></script>
+</body>
+</html>

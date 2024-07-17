@@ -1,0 +1,108 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #4a90e2, #9013fe);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #fff;
+}
+
+.login-container {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #fff;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    text-align: left;
+    font-weight: bold;
+    color: #fff;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+input:focus {
+    outline: none;
+    border-color: #9013fe;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    background-color: #4a90e2;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    flex: 1;
+    margin: 0 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="button"] {
+    background-color: #9013fe;
+}
+
+button:hover {
+    background-color: #357ABD;
+}
+
+button[type="button"]:hover {
+    background-color: #6E0EF8;
+}
+
+.error-message {
+    color: #000000;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+@media (max-width: 480px) {
+    .login-container {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    label, input, button {
+        font-size: 14px;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    button {
+        margin-bottom: 10px;
+    }
+}
